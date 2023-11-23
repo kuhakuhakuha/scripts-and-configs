@@ -14,7 +14,7 @@ create_dirs () {
 
 install_deps () {
   cd "$HOME"
-  apt install tmux git build-essential tree ripgrep curl wget ldnsutils lm-sensors sudo locales-all python3-venv unzip
+  sudo apt install tmux git build-essential tree ripgrep curl wget ldnsutils lm-sensors sudo locales-all python3-venv unzip
   cd "$HOME"
 }
 
@@ -96,4 +96,6 @@ install_nvchad () {
   git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
   cd "$HOME"
 }
+
+echo create_dirs install_deps update_bashrc install_docker install_ohmytmux install_nvm
 
